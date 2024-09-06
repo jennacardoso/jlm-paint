@@ -12,15 +12,14 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-/*header below is for the email hyperlink*/
 header {
     position: relative; /* Ensure the header is positioned relatively */
 }
 
 .contact-info {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    top: 50px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
     text-align: right; /* Align text to the right */
 }
 
@@ -30,7 +29,7 @@ header {
 }
 
 .contact-info a:hover {
-    text-decoration: bold; /* Underline on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 
