@@ -64,9 +64,20 @@ nav ul li a {
     font-weight: 500; /* Medium weight */
 }
 
-nav ul li a:hover {
-    color: #72439d; /* purple color on hover */
+/* Specific hover colors for navigation links */
+
+.nav-paintings:hover {
+    color: #f5b700; /* orange color for home link on hover */
 }
+
+.nav-about:hover {
+    color: #dc0073; /* bright pink color for about link on hover */
+}
+
+.nav-connect:hover {
+    color: #008bf8; /* bright blue color for connect link on hover */
+}
+
 
 /* Contact Info Styling */
 
@@ -82,7 +93,7 @@ nav ul li a:hover {
 }
 
 .contact-info a:hover {
-    color: #72439d; /* Purple color for links */
+    color: #89fc00; /* lime green color for links */
     text-decoration: none; /* No underline on hover */
 }
 
