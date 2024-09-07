@@ -41,6 +41,16 @@ header {
     padding: 0 20px; /* Adds padding on the sides */
 }
 
+/* Styling for h2 to align with the navigation */
+h2 {
+    margin: 0; /* Removes default margin */
+    padding: 0 20px; /* Adds the same padding as the header */
+    font-size: 2rem; /* Adjust the font size if needed */
+    color: #333; /* Dark gray color for consistency */
+    text-align: left; /* Align text to the left */
+}
+
+
 /* Navigation Styles */
 
 nav {
@@ -64,18 +74,19 @@ nav ul li a {
     font-weight: 500; /* Medium weight */
 }
 
+
 /* Specific hover colors for navigation links */
 
 .nav-paintings:hover {
-    color: #f5b700; /* orange color for home link on hover */
+    color: #d55e00; /* orange color color blind friendly for home link on hover */
 }
 
 .nav-about:hover {
-    color: #dc0073; /* bright pink color for about link on hover */
+    color: #cc79a7; /* pink color (cbf) for about link on hover */
 }
 
 .nav-connect:hover {
-    color: #008bf8; /* bright blue color for connect link on hover */
+    color: #0072b2; /* blue color (cbf) for connect link on hover */
 }
 
 
@@ -93,7 +104,7 @@ nav ul li a {
 }
 
 .contact-info a:hover {
-    color: #89fc00; /* lime green color for links */
+    color: #009e73; /* green color (cbf) for links */
     text-decoration: none; /* No underline on hover */
 }
 
@@ -102,7 +113,7 @@ nav ul li a {
 .hero {
     background: url('path/to/hero-image.jpg') no-repeat center center/cover; /* Hero image background */
     color: #fff; /* White text color */
-    padding: 100px 20px; /* Adds padding */
+    padding: 0px 20px; /* Adds padding */
     text-align: center; /* Centers text */
 }
 
@@ -114,7 +125,7 @@ nav ul li a {
 /* Section Styling */
 
 section {
-    padding: 40px 20px; /* Adds padding inside each section */
+    padding: 0px 20px; /* Adds padding inside each section */
 }
 
 /* Portfolio Gallery Styling */
