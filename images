@@ -1,0 +1,10 @@
+/my-website
+    /images
+        sunflower1-large.jpg
+        sunflower2-thumb.jpg
+    /css
+        style.css
+    /js
+        script.js
+    index.html
+    about.html
