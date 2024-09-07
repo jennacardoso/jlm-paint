@@ -152,6 +152,27 @@ section {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+}
+
+.gallery a {
+    flex: 1 1 calc(25% - 10px); /* Adjusts the size of the anchor elements */
+    box-sizing: border-box; /* Includes padding and border in width and height */
+}
+
+.gallery img {
+    width: 400px; /* Set the width of the thumbnail images */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensures images are block elements */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+
 /* Footer Styling */
 
 footer {
