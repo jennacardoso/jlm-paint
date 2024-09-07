@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackie Cardoso - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="header-container">
             <nav>
-                <ul>
-                    <li><a href="index.html" class="nav-paintings">Paintings</a></li>
-                    <li><a href="about.html" class="nav-about">About</a></li>
-                    <li><a href="https://www.instagram.com/jackiecardoso_art/?hl=en" target="_blank" class="nav-connect">Connect</a></li>
-                </ul>
-            </nav>
+    <ul>
+        <li><a href="index.html" class="nav-paintings">Paintings</a></li>
+        <li><a href="about.html" class="nav-about">About</a></li>
+        <li><a href="https://www.instagram.com/jackiecardoso_art/?hl=en" class="nav-connect" target="_blank">Connect</a></li>
+    </ul>
+</nav>
             <div class="contact-info">
-                <a href="mailto:jacquelinelmcardoso@gmail.com" class="contact-email">jacquelinelmcardoso@gmail.com</a>
-                <!-- Add more contact links if needed -->
+                <a href="mailto:jacquelinelmcardoso@gmail.com">jacquelinelmcardoso@gmail.com</a>
             </div>
         </div>
         <h1>Jackie Cardoso</h1>
     </header>
     <main>
-     <section id="paintings">
-            <h1>My Paintings</h1>
+        <section id="paintings">
             <div class="gallery">
                 <a href="images/sunflower-large.jpg" data-lightbox="paintings" data-title="Painting 1 - $200 - Size: 24x36">
                     <img src="images/sunflower-thumb.jpg" alt="Painting 1">
@@ -34,10 +34,12 @@
                 <!-- Add more paintings as needed -->
             </div>
         </section>
-    
-    <!-- Add more sections here -->
+    </main>
     <footer>
         <p>&copy; 2024 Jackie Cardoso</p>
     </footer>
+
+    <!-- Include Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
