@@ -275,46 +275,6 @@ img {
     max-width: 100%;
     height: auto; /* Maintain aspect ratio */
 }
-/* For smaller devices like mobile */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr); /* Adjust grid to 2 columns */
-        gap: 10px; /* Reduce gap between items */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        text-align: center; /* Center nav items */
-    }
-}
-
-/* Extra small devices */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr; /* Single column on very small screens */
-    }
-}
 
 
 /* Footer Styling */
