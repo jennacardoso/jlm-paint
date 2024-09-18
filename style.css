@@ -18,7 +18,12 @@ body {
 
 /* Header Styling */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #f9f9f9; /* White background for the header */
+    box-shadow: none; /* Remove shadow */
+    border-bottom: none; /* Ensure no border at the bottom */
     color: #333; /* Dark gray text color */
     padding: 20px 0; /* Adds vertical padding */
     display: flex;
@@ -66,6 +71,28 @@ nav ul li a {
     color: #333; /* Dark gray text color */
     text-decoration: none; /* Removes underline */
     font-weight: 500; /* Medium weight */
+}
+
+/* Add this to your existing navigation styling */
+header {
+    position: sticky;  /* Make the header sticky */
+    top: 0;            /* Stick the header to the top */
+    z-index: 1000;     /* Ensure it stays above other content */
+    background-color: #f9f9f9; /* Background color to differentiate */
+    box-shadow: none; /* Remove shadow to avoid any line between header and content */
+    border-bottom: none; /* Ensure there's no border at the bottom */
+}
+
+/* Style for active link */
+nav ul li a.active {
+    color: #0072b2;  /* Change color for active link */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Optional: Hover effect for better interaction */
+nav ul li a:hover {
+    color: #d55e00; /* Change color on hover */
+    text-decoration: none; /* Optional: add underline on hover */
 }
 
 /* Specific hover colors for navigation links */
@@ -182,74 +209,117 @@ section {
 /* Gallery Styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(5, 1fr); /* Change to 5 columns instead of 6 */
     gap: 20px; /* Space between items */
-    padding: 20px; /* Optional: add padding around the grid */
+    padding: 20px; /* Padding around the grid */
 }
 
+/* Individual gallery item */
 .gallery-item {
-    position: relative; /* Allow positioning of child elements */
-    overflow: hidden;   /* Hide overflow to ensure images fit within their containers */
-    width: 100%;        /* Adjust container width as needed */
-    padding-top: 150%;  /* Maintain a 2:3 aspect ratio (portrait) */
-    background: #f9f9f9; /* Optional: background color to fill empty space */
+    position: relative; /* Allows positioning of child elements */
+    overflow: hidden; /* Ensures images fit within their containers */
+    background: #fff; /* White background for clean look */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
+/* Gallery item image */
 .gallery-item img {
-    position: absolute; /* Position the image absolutely within its container */
-    top: 0;             /* Align the image to the top of the container */
-    left: 0;            /* Align the image to the left of the container */
-    width: 100%;        /* Make the image fill the width of the container */
-    height: auto;       /* Maintain the original aspect ratio */
-    object-fit: contain; /* Ensure the image is contained within the container */
+    display: block; /* Ensure image takes up full container width */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image is contained within the space */
 }
 
 /* Landscape-specific styling */
 .gallery-item.landscape {
     grid-column: span 2; /* Span two columns for landscape images */
-    width: 100%;
 }
 
-/* Optional: Add styling to ensure landscape images fill the grid space */
-.gallery-item.landscape img {
-    object-fit: cover; /* Ensure the image covers the full space without distortion */
-}
-
-/* Gallery Info Styling */
+/* Info always visible below the image */
 .gallery-info {
-    padding: 5px;
-    background-color: #f9f9f9; /* Background color for the info box */
-    text-align: center; /* Center the text */
+    padding: 10px; /* Padding around the text */
+    background-color: #fff; /* White background for clean look */
+    text-align: left; /* Align text to the left */
+    border-top: 1px solid #ddd; /* Subtle border to separate info from image */
 }
 
+/* Title styling */
 .gallery-info h3 {
-    margin: 0 0 4px; /* Margin adjustments for the title */
-    font-size: 14px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margins */
+    font-size: 16px; /* Font size for title */
+    font-weight: 600; /* Slightly bold for emphasis */
+    color: #333; /* Dark gray for better readability */
 }
 
+/* Price and size styling */
 .gallery-info p {
-    margin: 2px 0; /* Margin adjustments for size and price */
-    font-size: 14px; /* Adjust font size as needed */
+    margin: 4px 0 0; /* Adds space between elements */
+    font-size: 14px; /* Smaller font for additional info */
+    color: #555; /* Slightly lighter gray for secondary text */
 }
 
-/* Hover effect for gallery items */
-.gallery-item:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+body {
+    font-size: 1rem; /* Base font size */
 }
 
+h1 {
+    font-size: 2.5rem; /* Scales relative to base font */
+}
+
+p {
+    font-size: 1rem;
+}
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+/* For smaller devices like mobile */
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid to 2 columns */
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        text-align: center; /* Center nav items */
     }
 }
 
+/* Extra small devices */
 @media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
     .gallery {
-        grid-template-columns: 1fr; /* One column on very small screens */
+        grid-template-columns: 1fr; /* Single column on very small screens */
     }
 }
+
 
 /* Footer Styling */
 footer {
-    text-align: center;
+    background-color: #f9f9f9; /* Same background for footer */
+    color: #333; /* Gray text color */
+    text-align: center; /* Centers text */
+    padding: 20px 0; /* Adds vertical padding */
