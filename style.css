@@ -260,22 +260,6 @@ section {
     color: #555; /* Slightly lighter gray for secondary text */
 }
 
-body {
-    font-size: 1rem; /* Base font size */
-}
-
-h1 {
-    font-size: 2.5rem; /* Scales relative to base font */
-}
-
-p {
-    font-size: 1rem;
-}
-img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
-
 
 /* Footer Styling */
 footer {
