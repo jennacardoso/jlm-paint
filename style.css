@@ -260,3 +260,7 @@ section {
     color: #555; /* Slightly lighter gray for secondary text */
 
 }
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
