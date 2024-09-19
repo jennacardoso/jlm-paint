@@ -1,19 +1,19 @@
 /* Basic Body Styles */
 body {
-    margin: 0; /* Removes default margin around the body */
-    padding: 0; /* Removes default padding inside the body */
-    font-family: 'Poppins', sans-serif; /* Modern, clean font for the page */
-    color: #333; /* Dark gray text color for better readability */
-    line-height: 1.6; /* Increases line height for improved readability */
-    background-color: #f9f9f9; /* Light gray background for the entire page */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 /* Global Container */
 .container {
-    width: 90%; /* Provides some margin from the edges */
-    max-width: 1200px; /* Limits the maximum width */
-    margin: 0 auto; /* Centers the container */
-    padding: 0; /* Adds padding inside the container */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* Header Styling */
@@ -21,34 +21,33 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #f9f9f9; /* White background for the header */
-    box-shadow: none; /* Remove shadow */
-    border-bottom: none; /* Ensure no border at the bottom */
-    color: #333; /* Dark gray text color */
-    padding: 20px 0; /* Adds vertical padding */
+    background-color: #f9f9f9;
+    border-bottom: none;
+    color: #333;
+    padding: 20px 0;
     display: flex;
     flex-direction: column; 
-    text-align: center; /* Centers text */
+    text-align: center;
 }
 
 /* Header Container Styling */
 .header-container {
     display: flex;
-    justify-content: space-between; /* Distributes space between nav and contact info */
-    align-items: center; /* Vertically centers items */
-    width: 100%; /* Ensures it spans the full width */
-    max-width: 1200px; /* Optionally limits the maximum width */
-    margin: 0 auto; /* Centers the container */
-    padding: 0 20px; /* Adds padding on the sides */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Styling for h2 to align with the navigation */
+/* Styling for h2 */
 h2 {
-    margin: 0; /* Removes default margin */
-    padding: 0 20px; /* Adds the same padding as the header */
-    font-size: 2rem; /* Adjust the font size if needed */
-    color: #333; /* Dark gray color for consistency */
-    text-align: left; /* Align text to the left */
+    margin: 0;
+    padding: 0 20px;
+    font-size: 2rem;
+    color: #333;
+    text-align: left;
 }
 
 /* Navigation Styles */
@@ -57,42 +56,31 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Removes default list styling */
-    padding: 0; /* Removes padding */
-    margin: 0; /* Removes margin */
-    display: flex; /* Aligns items horizontally */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 15px; /* Adds spacing between items */
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #333; /* Dark gray text color */
-    text-decoration: none; /* Removes underline */
-    font-weight: 500; /* Medium weight */
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-/* Add this to your existing navigation styling */
-header {
-    position: sticky;  /* Make the header sticky */
-    top: 0;            /* Stick the header to the top */
-    z-index: 1000;     /* Ensure it stays above other content */
-    background-color: #f9f9f9; /* Background color to differentiate */
-    box-shadow: none; /* Remove shadow to avoid any line between header and content */
-    border-bottom: none; /* Ensure there's no border at the bottom */
-}
-
-/* Style for active link */
+/* Active link style */
 nav ul li a.active {
-    color: #0072b2;  /* Change color for active link */
-    font-weight: bold; /* Bold text for emphasis */
+    color: #0072b2;
+    font-weight: bold;
 }
 
-/* Optional: Hover effect for better interaction */
+/* Hover effects */
 nav ul li a:hover {
-    color: #d55e00; /* Change color on hover */
-    text-decoration: none; /* Optional: add underline on hover */
+    color: #d55e00;
 }
 
 /* Specific hover colors for navigation links */
@@ -109,171 +97,225 @@ nav ul li a:hover {
 }
 
 /* Dropdown menu styling */
-nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
 nav ul li {
-    position: relative; /* Make it the reference point for absolute positioning */
-    margin: 0 15px;
+    position: relative;
 }
 
 nav ul li .dropdown {
-    display: none; /* Hide the dropdown by default */
+    display: none;
     position: absolute;
-    top: 100%; /* Position the dropdown below the main item */
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
 nav ul li:hover .dropdown {
-    display: block; /* Show the dropdown when hovering over the parent */
-}
-
-nav ul li .dropdown li {
-    margin: 5px 0;
-}
-
-nav ul li .dropdown a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 5px 10px;
     display: block;
-    white-space: nowrap; /* Prevent text from wrapping */
-}
-
-nav ul li .dropdown a:hover {
-    background-color: #f0f0f0;
-    color: #d55e00; /* Change color on hover */
 }
 
 /* Contact Info Styling */
 .contact-info {
-    text-align: right; /* Aligns text to the right */
+    text-align: right;
 }
 
 .contact-info a {
-    color: #333; /* Dark gray color for links */
-    text-decoration: none; /* Removes underline */
-    font-size: 16px; /* Font size for better readability */
-    font-weight: 500; /* Medium weight */
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .contact-info a:hover {
-    color: #009e73; /* green color for links */
-    text-decoration: none; /* No underline on hover */
+    color: #009e73;
 }
 
 /* Hero Section Styling */
 .hero {
-    background: url('path/to/hero-image.jpg') no-repeat center center/cover; /* Hero image background */
-    color: #fff; /* White text color */
-    padding: 0px 20px; /* Adds padding */
-    text-align: center; /* Centers text */
+    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 0px 20px;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 3rem; /* Larger font size for the heading */
-    margin: 0; /* Removes default margin */
-}
-
-/* Section Styling */
-section {
-    padding: 0px 10px; /* Adds padding inside each section */
-}
-
-/* Portfolio Gallery Styling */
-#portfolio .project {
-    box-sizing: border-box; /* Includes padding and border in width and height */
-    background-color: #fff; /* White background for projects */
-    padding: 10px; /* Adds padding inside each project */
-    border: 1px solid #ddd; /* Light gray border around projects */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
-}
-
-#portfolio .project:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    font-size: 3rem;
+    margin: 0;
 }
 
 /* Gallery Styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Change to 5 columns instead of 6 */
+    grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for larger screens */
     gap: 20px; /* Space between items */
     padding: 20px; /* Padding around the grid */
+    grid-auto-flow: dense;
 }
 
-/* Individual gallery item */
+/* Portfolio Gallery Styling */
+#portfolio .project {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Item Styling */
 .gallery-item {
-    position: relative; /* Allows positioning of child elements */
-    overflow: hidden; /* Ensures images fit within their containers */
-    background: #fff; /* White background for clean look */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Gallery item image */
 .gallery-item img {
-    display: block; /* Ensure image takes up full container width */
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image is contained within the space */
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Landscape-specific styling */
 .gallery-item.landscape {
     grid-column: span 2; /* Span two columns for landscape images */
+    grid-row: span 1;
 }
 
-/* Info always visible below the image */
+/* Hover effects */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Info */
 .gallery-info {
-    padding: 10px; /* Padding around the text */
-    background-color: #fff; /* White background for clean look */
-    text-align: left; /* Align text to the left */
-    border-top: 1px solid #ddd; /* Subtle border to separate info from image */
+    height: 60px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Title styling */
-.gallery-info h3 {
-    margin: 0; /* Remove default margins */
-    font-size: 16px; /* Font size for title */
-    font-weight: 600; /* Slightly bold for emphasis */
-    color: #333; /* Dark gray for better readability */
+/* Ensure consistent heights for gallery items */
+.gallery-item.landscape .gallery-info {
+    height: 60px;
 }
 
-/* Price and size styling */
+/* Adjust text styles */
+.gallery-info h3, .gallery-info p {
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Adds "..." if the text is too long */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
 .gallery-info p {
-    margin: 4px 0 0; /* Adds space between elements */
-    font-size: 14px; /* Smaller font for additional info */
-    color: #555; /* Slightly lighter gray for secondary text */
-
+    font-size: 12px; /* Adjust the font size */
+    color: #555; /* Gray color for description */
 }
+
+/* New styles for paragraph alignment and gallery */
+main section {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some space around the section */
+}
+
+.gallery {
+    display: flex; /* Use flexbox for the gallery */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items in the gallery */
+}
+
+/* Hamburger menu */
+.menu-toggle {
+    display: none; /* Hidden by default */
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+        gap: 10px;
+        padding: 10px;
     }
 
-    @media (max-width: 768px) {
     .header-container {
-        flex-direction: column; /* Stack elements vertically */
-        padding: 10px; /* Reduce padding */
+        flex-direction: column;
+        padding: 10px;
     }
     
     nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
-        text-align: center; /* Center links */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust title font size for mobile */
+    }
+
+    .contact-info a {
+        font-size: 14px; /* Adjust contact info size */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Smaller font size for hero section */
+    }
+
+    section {
+        padding: 10px; /* Reduce section padding */
+    }
+    
+    .menu-toggle {
+        display: block; /* Show the hamburger icon */
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2000;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        border-top: 1px solid #ddd;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Adjust font size for mobile */
     }
 }
-
