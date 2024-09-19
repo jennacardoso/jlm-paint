@@ -264,3 +264,16 @@ section {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Reduce padding */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        text-align: center; /* Center links */
+    }
+}
+
