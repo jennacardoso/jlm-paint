@@ -12,6 +12,8 @@
       
         <div class="header-container">
    <nav>
+	      <button class="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            <nav class="nav-menu">
     <ul>
         <li>
             <a href="index.html" class="nav-paintings">Paintings</a>
@@ -39,7 +41,13 @@
 
 
 <h2><p>Each new season calls the Plein Air artist to come out and play, I hear it and respond.  Perfect are the vistas. I remind myself to breathe, then begin the dance of touching paint to canvas.</h2></p>
-
+ <script>
+        // Toggle navigation menu visibility on mobile when the menu button is clicked
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            var navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show'); // Toggles the 'show' class
+        });
+    </script>
 </main>
 </body>
 </html>
