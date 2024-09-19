@@ -13,6 +13,8 @@
     <header>
         <div class="header-container">
             <nav>
+                 <button class="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            <nav class="nav-menu">
                 <ul>
                     <li>
                         <a href="index.html" class="nav-paintings">Paintings</a>
@@ -69,5 +71,12 @@
 
     <!-- Lightbox2 JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+ <script>
+        // Toggle navigation menu visibility on mobile when the menu button is clicked
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            var navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show'); // Toggles the 'show' class
+        });
+    </script>
 </body>
 </html>
