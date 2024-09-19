@@ -259,15 +259,4 @@ section {
     font-size: 14px; /* Smaller font for additional info */
     color: #555; /* Slightly lighter gray for secondary text */
 
-
-/* Footer Styling */
-footer {
-    background-color: #f9f9f9; /* Same background for footer */
-    color: #333; /* Gray text color */
-    text-align: center; /* Centers text */
-    padding: 20px 0; /* Adds vertical padding */
-    width: 100%; /* Ensures the footer spans the full width */
-    box-sizing: border-box; /* Includes padding in width calculation */
-    margin: 0; /* Remove default margin */
-
 }
