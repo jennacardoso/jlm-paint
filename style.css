@@ -152,7 +152,7 @@ nav ul li .dropdown a {
 
 nav ul li .dropdown a:hover {
     background-color: #f0f0f0;
-    color: #0072b2; /* Change color on hover */
+    color: #d55e00; /* Change color on hover */
 }
 
 /* Contact Info Styling */
@@ -258,7 +258,6 @@ section {
     margin: 4px 0 0; /* Adds space between elements */
     font-size: 14px; /* Smaller font for additional info */
     color: #555; /* Slightly lighter gray for secondary text */
-}
 
 
 /* Footer Styling */
@@ -267,3 +266,8 @@ footer {
     color: #333; /* Gray text color */
     text-align: center; /* Centers text */
     padding: 20px 0; /* Adds vertical padding */
+    width: 100%; /* Ensures the footer spans the full width */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    margin: 0; /* Remove default margin */
+
+}
