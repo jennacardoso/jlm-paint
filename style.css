@@ -179,8 +179,7 @@ nav ul li:hover .dropdown {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-
-* Gallery Item Styling */
+/* Gallery Item Styling */
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -264,6 +263,7 @@ main section {
     border-radius: 50%;
     z-index: 10;  /* Make sure it's above the image */
 }
+
 
 /* Hamburger menu */
 .menu-toggle {
