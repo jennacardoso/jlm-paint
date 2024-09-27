@@ -50,6 +50,14 @@ h2 {
     text-align: left;
 }
 
+/* Styling for p */
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
 /* Navigation Styles */
 nav {
     margin: 0;
