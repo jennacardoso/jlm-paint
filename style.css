@@ -256,8 +256,8 @@ main section {
 .gallery-item.sold::before {
     content: '';
     position: absolute;
-    bottom: 10px;  /* Adjust the position to your liking */
-    right: 10px; /* Adjust the position to your liking */
+    bottom: 5px;  /* Adjust the position to your liking */
+    right: 5px; /* Adjust the position to your liking */
     width: 15px;  /* Size of the dot */
     height: 15px;
     background-color: red;
