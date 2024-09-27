@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackie Cardoso - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <body>
+<header>
+    <div class="header-container">
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-paintings">Paintings</a>
+                    <ul class="dropdown">
+                        <li><a href="pleinair.html">Plein Air</a></li>
+                        <li><a href="still.html">Still Life</a></li>
+                        <li><a href="abstract.html">Abstract</a></li>
+                        <li><a href="commissions.html">Commissions</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-about">About</a></li>
+                <li><a href="https://www.instagram.com/jackiecardoso_art/?hl=en" class="nav-connect" target="_blank">Connect</a></li>
+            </ul>
+        </nav>
+        <p><b>Jackie Cardoso</b></p>
+        <div class="contact-info">
+            <a href="mailto:jacquelinelmcardoso@gmail.com">jacquelinelmcardoso@gmail.com</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+</header>
+
+
+    <main>
+        <section>
+            <h3>Abstracts</h3>
+            <!-- Abstract paintings gallery -->
+            <section id="paintings">
+                <div class="gallery">
+                    <div class="gallery-item landscape">
+                        <a href="images/abstract1-large.jpg" data-lightbox="gallery" data-title="Sneekin Out">
+                            <img src="images/abstract2-thumb.jpg" alt="Interconnected">
+                        </a>
+                        <div class="gallery-info">
+                            <h3>Sneekin Out</h3>
+                             <p> Acrylic </p>
+                            <p>20" x 24"</p>
+                            <p>$700</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item sold">
+                        <a href="images/jo-large.jpg" data-lightbox="gallery" data-title="Jo">
+                            <img src="images/jo-thumb.jpg" alt="Jo">
+                        </a>
+                        <div class="gallery-info">
+                            <h3>Jo</h3>
+                             <p> Acrylic </p>
+                            <p>40" x 30"</p>
+                            <p>$1700</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <!-- Lightbox2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        // Toggle navigation menu visibility on mobile when the menu button is clicked
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            var navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show'); // Toggles the 'show' class
+        });
+    </script>
+</body>
+</html>
