@@ -221,7 +221,7 @@ nav ul li:hover .dropdown {
 }
 
 .gallery-info p {
-    font-size: 12px; /* Adjust the font size */
+    font-size: 14px; /* Adjust the font size */
     color: #555; /* Gray color for description */
     line-height: 1.3;
     margin: 0;
