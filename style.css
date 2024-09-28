@@ -59,6 +59,13 @@ p {
     text-align: left;
 }
 
+/* Styling for about info */
+.content-column {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0px;
+    text-align: center;
+}
 
 /* Navigation Styles */
 nav {
