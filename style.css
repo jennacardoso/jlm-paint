@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -138,7 +138,9 @@ nav ul li:hover .dropdown {
     color: inherit; /* keeps the color consistent for visited links */
     text-decoration: none; /* ensures visited links are not underlined */
 }
-
+.nav-home a:hover {
+    color: #f0e442; /*yellow hover color*/
+}
 /* Contact Info Styling */
 .contact-info {
     text-align: right;
@@ -375,7 +377,7 @@ main section {
     top: 125px; /* Align to the top of the viewport */
     left: 0; /* Align to the left */
     width: 100%; /* Full width */
-    height: calc(38vh - 60px); /* Cover the height of the viewport minus the header height */
+    height: calc(38vh - 140px); /* Cover the height of the viewport minus the header height */
     background-color: rgba(249, 249, 249, 0.95); /* Slightly transparent background */
     border: none; /* Remove border */
     padding: 10px; /* Add padding */
