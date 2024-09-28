@@ -1,4 +1,4 @@
-/* Basic Body Styles */
+/*Basic Body Styles */
 body {
     margin: 0;
     padding: 20px 0;
@@ -49,15 +49,16 @@ h2 {
     font-size: 2rem;
     color: #333;
     text-align: left;
-}
 
+}
 /* Styling for p */
 p {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
     text-align: left;
 }
+
 
 /* Navigation Styles */
 nav {
@@ -117,7 +118,7 @@ nav ul li .dropdown {
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
@@ -125,6 +126,7 @@ nav ul li .dropdown {
 nav ul li:hover .dropdown {
     display: block;
 }
+
 
 /* Home Navigation Button Styling */
 .nav-home a {
@@ -138,9 +140,11 @@ nav ul li:hover .dropdown {
     color: inherit; /* keeps the color consistent for visited links */
     text-decoration: none; /* ensures visited links are not underlined */
 }
+
 .nav-home a:hover {
     color: #f0e442; /*yellow hover color*/
 }
+
 /* Contact Info Styling */
 .contact-info {
     text-align: right;
@@ -171,6 +175,7 @@ nav ul li:hover .dropdown {
 }
 
 /* Gallery Styling */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for larger screens */
@@ -178,6 +183,7 @@ nav ul li:hover .dropdown {
     padding: 20px; /* Padding around the grid */
     grid-auto-flow: dense;
 }
+
 .gallery-info {
     margin-top: 5px; /* Space between image and text */
     text-align: center; /* Center align text */
@@ -291,7 +297,6 @@ main section {
     border-radius: 50%;
     z-index: 10;  /* Make sure it's above the image */
 }
-
 
 /* Hamburger menu */
 .menu-toggle {
