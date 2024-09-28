@@ -178,6 +178,18 @@ nav ul li:hover .dropdown {
     padding: 20px; /* Padding around the grid */
     grid-auto-flow: dense;
 }
+.gallery-info {
+    margin-top: 5px; /* Space between image and text */
+    text-align: center; /* Center align text */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for larger screens */
+    gap: 20px; /* Space between items */
+    padding: 10px; /* Padding around the grid */
+    grid-auto-flow: dense;
+}
 
 /* Portfolio Gallery Styling */
 #portfolio .project {
