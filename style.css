@@ -125,6 +125,19 @@ nav ul li:hover .dropdown {
     display: block;
 }
 
+/* Home Navigation Button Styling */
+.nav-home a {
+    color: #333; /* or specify the color you prefer */
+    text-decoration: none; /* removes the underline */
+    font-size: 16px;
+    font-weight: 1000;
+}
+
+.nav-home a:visited {
+    color: inherit; /* keeps the color consistent for visited links */
+    text-decoration: none; /* ensures visited links are not underlined */
+}
+
 /* Contact Info Styling */
 .contact-info {
     text-align: right;
