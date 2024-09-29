@@ -8,6 +8,31 @@ body {
     background-color: #f9f9f9;
 }
 
+/* About Container Styling */
+.about-container {
+    max-width: 600px; /* Set a maximum width for the skinny column */
+    margin: 0 auto; /* Center it horizontally */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center text inside the container */
+}
+
+/* Styling for h2 */
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #333;
+    text-align: center; /* Center the title */
+}
+
+/* Styling for p */
+p {
+    max-width: 600px; /* Ensure the paragraph doesn't exceed the column width */
+    margin: 20px auto; /* Center paragraph with automatic margins */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Optional: align text left if desired */
+}
+
 /* Global Container */
 .container {
     width: 90%;
