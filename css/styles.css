@@ -212,8 +212,8 @@ nav ul li:hover .dropdown {
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Change to 4 columns for larger screens */
-    gap: 20px; /* Space between items */
-    padding: 20px; /* Padding around the grid */
+    gap: 10px; /* Space between items */
+    padding: 10px; /* Padding around the grid */
     grid-auto-flow: dense;
 }
 
