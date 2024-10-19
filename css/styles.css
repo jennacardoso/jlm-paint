@@ -1,11 +1,7 @@
-/* Universal box-sizing rules */
-* {
-    box-sizing: border-box;
-}
 /* Basic Body Styles */
 body {
     margin: 0;
-    padding: 0 0 20px;
+    padding: 20px 0;
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
@@ -39,7 +35,7 @@ p {
 
 /* Global Container */
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0;
     padding: 0;
@@ -69,7 +65,7 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0 20px;
 }
 
 /* Styling for h2 */
@@ -84,9 +80,17 @@ h2 {
 /* Styling for p */
 p {
     max-width: 600px;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 0px;
     text-align: left;
+}
+
+/* Styling for about info */
+.content-column {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0px;
+    text-align: center;
 }
 
 /* Navigation Styles */
@@ -207,7 +211,7 @@ nav ul li:hover .dropdown {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for larger screens */
+    grid-template-columns: repeat(4, 1fr); /* Change to 4 columns for larger screens */
     gap: 20px; /* Space between items */
     padding: 20px; /* Padding around the grid */
     grid-auto-flow: dense;
@@ -295,12 +299,6 @@ main section {
     margin: 20px 0; /* Add some space around the section */
 }
 
-.gallery {
-    display: flex; /* Use flexbox for the gallery */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center the items in the gallery */
-}
-
 /* Style for sold paintings */
 .gallery-item.sold {
     position: relative;
@@ -325,10 +323,10 @@ main section {
 }
 
 /* Mobile layout */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
-        gap: 10px;
+        gap: 15px;
         padding: 10px;
     }
 
@@ -336,6 +334,7 @@ main section {
         width: 100%;
         max-width: 90%;
         height: auto;
+        object-fit: cover;
     }
 
     .header-container {
@@ -392,6 +391,17 @@ main section {
     background-color: #333; /* Color of the lines */
     border-radius: 2px; /* Rounded edges */
     transition: all 0.3s ease; /* Smooth transition for animations */
+}
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* For specific sections that might overflow */
+.container, .gallery, .header-container {
+    max-width: 100%; /* Prevent overflow from containers */
+    box-sizing: border-box; /* Ensure padding does not affect the overall width */
 }
 
 /* Remove any background or border */
