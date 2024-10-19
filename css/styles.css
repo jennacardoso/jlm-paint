@@ -1,4 +1,7 @@
-
+/* Universal box-sizing rules */
+* {
+    box-sizing: border-box;
+}
 /*Basic Body Styles */
 body {
     margin: 0;
