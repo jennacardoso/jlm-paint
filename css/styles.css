@@ -221,14 +221,6 @@ nav ul li:hover .dropdown {
     text-align: center; /* Center align text */
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for larger screens */
-    gap: 20px; /* Space between items */
-    padding: 10px; /* Padding around the grid */
-    grid-auto-flow: dense;
-}
-
 /* Portfolio Gallery Styling */
 #portfolio .project {
     box-sizing: border-box;
@@ -306,12 +298,6 @@ main section {
     margin: 20px 0; /* Add some space around the section */
 }
 
-.gallery {
-    display: flex; /* Use flexbox for the gallery */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center the items in the gallery */
-}
-
 /* Style for sold paintings */
 .gallery-item.sold {
     position: relative;
@@ -339,12 +325,14 @@ main section {
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
-        gap: 10px;
+        gap: 15px;
+        padding: 10px;
     }
 
     .gallery-item {
-        max-width: 100%;
+        width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
     .header-container {
