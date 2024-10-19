@@ -332,7 +332,6 @@ main section {
 
     .gallery-item {
         width: 100%;
-        max-width: 90%;
         height: auto;
         object-fit: cover;
     }
