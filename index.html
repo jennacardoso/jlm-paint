@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="theme-color" content="#FF00FF">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackie Cardoso</title>
@@ -490,16 +491,18 @@
         });
     </script>
 
-    <script>
+<script>
   window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
     if (window.scrollY > 50) {
-      header.classList.add('scrolled');
+      // Change the color of the address bar when scrolling down
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0072b2'); // Blue
     } else {
-      header.classList.remove('scrolled');
+      // Reset to original color when scroll position is at the top
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f9f9f9'); // Light grey
     }
   });
 </script>
+
 
 </body>
 </html>
