@@ -390,6 +390,20 @@ main section {
     border-radius: 2px; /* Rounded edges */
     transition: all 0.3s ease; /* Smooth transition for animations */
 }
+    
+/* Prevent horizontal scroll on mobile */
+html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    width: 100%; /* Ensure the body takes up the full width of the viewport */
+    margin: 0;
+    padding: 0;
+}
+
+/* For specific sections that might overflow */
+.container, .gallery, .header-container {
+    max-width: 100%; /* Prevent overflow from containers */
+    box-sizing: border-box; /* Ensure padding does not affect the overall width */
+}
 
 /* Remove any background or border */
 .menu-toggle, .hamburger {
