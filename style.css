@@ -423,10 +423,10 @@ main section {
     display: none; /* Hide the menu by default */
     flex-direction: column;
     position: fixed;
-    top: 125px; /* Align to the top of the viewport */
+    top: 110px; /* Align to the top of the viewport */
     left: 0; /* Align to the left */
     width: 100%; /* Full width */
-    height: calc(38vh - 140px); /* Cover the height of the viewport minus the header height */
+    height: calc(35vh - 110px); /* Cover the height of the viewport minus the header height */
     background-color: rgba(249, 249, 249, 0.95); /* Slightly transparent background */
     border: none; /* Remove border */
     padding: 10px; /* Add padding */
