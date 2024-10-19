@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
 }
-/*Basic Body Styles */
+/* Basic Body Styles */
 body {
     margin: 0;
     padding: 0 0 20px;
@@ -45,6 +45,7 @@ p {
     padding: 0;
 }
 
+
 /* Header Styling */
 header {
     position: sticky;
@@ -68,7 +69,7 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 0;
 }
 
 /* Styling for h2 */
@@ -83,7 +84,7 @@ h2 {
 /* Styling for p */
 p {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 0px;
     text-align: left;
 }
@@ -245,11 +246,10 @@ nav ul li:hover .dropdown {
 
 .gallery-item img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
-
 
 /* Hover effects */
 .gallery-item:hover {
@@ -295,6 +295,12 @@ main section {
     margin: 20px 0; /* Add some space around the section */
 }
 
+.gallery {
+    display: flex; /* Use flexbox for the gallery */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items in the gallery */
+}
+
 /* Style for sold paintings */
 .gallery-item.sold {
     position: relative;
@@ -318,7 +324,7 @@ main section {
     display: none; /* Hidden by default */
 }
 
-/* Mobile styles */
+/* Mobile layout */
 @media (max-width: 1000px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
@@ -328,8 +334,8 @@ main section {
 
     .gallery-item {
         width: 100%;
+        max-width: 90%;
         height: auto;
-        object-fit: cover;
     }
 
     .header-container {
@@ -386,17 +392,6 @@ main section {
     background-color: #333; /* Color of the lines */
     border-radius: 2px; /* Rounded edges */
     transition: all 0.3s ease; /* Smooth transition for animations */
-}
-
-    /* Prevent horizontal scroll on mobile */
-html, body {
-    overflow-x: hidden; /* Disable horizontal scrolling */
-}
-
-/* For specific sections that might overflow */
-.container, .gallery, .header-container {
-    max-width: 100%; /* Prevent overflow from containers */
-    box-sizing: border-box; /* Ensure padding does not affect the overall width */
 }
 
 /* Remove any background or border */
