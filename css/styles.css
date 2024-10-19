@@ -326,7 +326,7 @@ main section {
 @media (max-width: 1000px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
-        gap: 15px;
+        gap: 10px;
         padding: 10px;
     }
 
