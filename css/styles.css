@@ -12,11 +12,6 @@ body {
     background-color: #f9f9f9;
 }
 
-.container, .gallery, .header-container, main {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 /* About Container Styling */
 .about-container {
     max-width: 600px; /* Set a maximum width for the skinny column */
