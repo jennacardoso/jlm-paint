@@ -209,7 +209,6 @@ nav ul li:hover .dropdown {
     grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for larger screens */
     gap: 20px; /* Space between items */
     padding: 20px; /* Padding around the grid */
-    max-width: 100%;
     grid-auto-flow: dense;
 }
 
@@ -249,11 +248,6 @@ nav ul li:hover .dropdown {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-img, section {
-    max-width: 100%;  /* Ensure images don't exceed the viewport width */
-    height: auto;     /* Maintain aspect ratio */
 }
 
 
