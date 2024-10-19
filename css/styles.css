@@ -1,7 +1,7 @@
 /* Basic Body Styles */
 body {
     margin: 0;
-    padding: 20px 0;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
@@ -15,7 +15,6 @@ body {
     padding: 20px; /* Add some padding */
     text-align: center; /* Center text inside the container */
 }
-
 
 /* Styling for h1 */
 h1 {
@@ -49,11 +48,13 @@ p {
 
 /* Global Container */
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
+
+
 /* Header Styling */
 header {
     position: sticky;
@@ -137,15 +138,6 @@ header {
     color: #009e73;
 }
 
-/* Styling for h2 */
-h2 {
-    margin: 0;
-    padding: 0 20px;
-    font-size: 2rem;
-    color: #333;
-    text-align: left;
-
-}
 /* Styling for p */
 p {
     max-width: 600px;
@@ -267,7 +259,7 @@ nav ul li:hover .dropdown {
 .hero {
     background: url('path/to/hero-image.jpg') no-repeat center center/cover;
     color: #fff;
-    padding: 0px 20px;
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -282,7 +274,7 @@ nav ul li:hover .dropdown {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Change to 4 columns for larger screens */
     gap: 10px; /* Space between items */
-    padding: 10px; /* Padding around the grid */
+    padding: 10px 20px; /* Padding around the grid */
     grid-auto-flow: dense;
 }
 
