@@ -1,11 +1,20 @@
+/* Universal box-sizing rules */
+* {
+    box-sizing: border-box;
+}
 /*Basic Body Styles */
 body {
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: #f9f9f9;
+}
+
+.container, .gallery, .header-container, main {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* About Container Styling */
@@ -62,7 +71,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -213,6 +222,7 @@ nav ul li:hover .dropdown {
     grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for larger screens */
     gap: 20px; /* Space between items */
     padding: 20px; /* Padding around the grid */
+    max-width: 100%;
     grid-auto-flow: dense;
 }
 
@@ -249,10 +259,16 @@ nav ul li:hover .dropdown {
 
 .gallery-item img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
+
+img, section {
+    max-width: 100%;  /* Ensure images don't exceed the viewport width */
+    height: auto;     /* Maintain aspect ratio */
+}
+
 
 /* Hover effects */
 .gallery-item:hover {
