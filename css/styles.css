@@ -47,8 +47,6 @@ p {
     margin: 0;
     padding: 0;
 }
-
-
 /* Header Styling */
 header {
     position: sticky;
@@ -61,6 +59,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 /* Header Container Styling */
@@ -74,7 +73,18 @@ header {
     padding: 0 20px;
 }
 
- Left section (for "Paintings") */
+/* Header container to separate left, center, and right sections */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space out left, center, and right */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ /* Left section (for "Paintings", "About", and "Instagram")*/
 .header-left {
     flex: 1; /* Take as much space as needed */
     display: flex;
@@ -87,11 +97,13 @@ header {
     text-align: center;
 }
 
-/* Right section (for "About", "Instagram", and Email) */
+/* Right section (for Email) */
 .header-right {
-    flex: 1; /* Take as much space as needed */
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
 }
 
 /* Navigation styles for the left section */
