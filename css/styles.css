@@ -16,6 +16,13 @@ body {
     text-align: center; /* Center text inside the container */
 }
 
+/* Styling for h1 */
+h1 {
+    text-align: center;
+    width: 100%; /* Take up the full width of the container */
+}
+
+
 /* Styling for h2 */
 h2 {
     margin: 0;
@@ -52,21 +59,63 @@ header {
     padding: 20px 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column; 
-    text-align: center;
 }
 
 /* Header Container Styling */
 .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+ Left section (for "Paintings") */
+.header-left {
+    flex: 1; /* Take as much space as needed */
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Center section (for "Jackie Cardoso") */
+.header-center {
+    flex: 2; /* Take double space to center */
+    text-align: center;
+}
+
+/* Right section (for "About", "Instagram", and Email) */
+.header-right {
+    flex: 1; /* Take as much space as needed */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navigation styles for the left section */
+.header-left nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-left nav ul li {
+    margin-right: 20px; /* Space between links */
+}
+
+/* Email link on the right side */
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #009e73;
 }
 
 /* Styling for h2 */
@@ -340,6 +389,16 @@ main section {
     .header-container {
         flex-direction: column;
         padding: 10px;
+    }
+
+    .header-left, .header-right {
+        width: 100%; /* Allow sections to take full width on mobile */
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .header-center {
+        margin-bottom: 10px;
     }
     
     nav ul {
