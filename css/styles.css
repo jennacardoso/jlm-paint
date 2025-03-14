@@ -10,10 +10,11 @@ body {
 /* Banner Styling */
 #info-banner {
     background-color: #B6FA7A;
-    border: solid;
+    border: none;
     font-weight: bold;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding: 5px;
 }
 /* About Container Styling */
 .about-container {
